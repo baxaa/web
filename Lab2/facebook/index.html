@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Facebook - sign in or sign up</title>
+</head>
+<style>
+    body {
+        background-color: rgb(240, 242, 245);
+    }
+
+    #logo {
+        position: absolute;
+        left: 150px;
+        top: 200px;
+        width: 21em;
+        height: 106px;
+    }
+
+    #desc {
+        color: black;
+        position: absolute;
+        left: 200px;
+        top: 280px;
+        font-style: inherit;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: normal;
+        width: 500px;
+    }
+
+    #qwerty {
+        color: grey;
+        position: absolute;
+        left: 900px;
+        top: 200px;
+        width: 396px;
+        height: 314.2px;
+        border-color: rgb(245, 242, 242);
+        border-radius: 8px;
+        background-color: white;
+    }
+
+    #login {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        position: static;
+        left: 100px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    #qwertyuiop {
+        color: rgb(17, 120, 242);
+        background-color: rgb(17, 120, 242);
+        width: 400px;
+        height: 50px;
+        border-color: rgb(17, 120, 242);
+        border-radius: 8px;
+        border-width: 0.5px;
+    }
+
+    #asdf {
+        width: 190px;
+        height: 40px;
+    }
+
+    #inp {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 392px;
+        height: 40px;
+        font-size: 18px;
+        border-radius: 10px;
+        border-color: rgb(209, 209, 209);
+        border-width: 0.5px;
+    }
+
+    #Fp {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        position: relative;
+        left: 150px;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    #hr {
+        /* height: 0.5px; */
+        color: grey;
+    }
+
+    #button2 {
+        background-color: rgb(101, 183, 66);
+        background-color: rgb(101, 183, 66);
+        width: 250px;
+        height: 50px;
+        position: relative;
+        left: 80px;
+        border-color: rgb(101, 183, 66);
+        border-radius: 8px;
+        border-width: 0.8px;
+    }
+
+    #CNA {
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+    }
+
+    #CP {
+        position: absolute;
+        left: 955px;
+        top: 540px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #CP1 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .lan {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        display: inline;
+        overflow: auto;
+        margin: 2px;
+    }
+
+    .listOfLanguage {
+        padding: 50px;
+        margin: 100px;
+    }
+
+    #fot {
+        background-color: white;
+        position: relative;
+        left: -10px;
+        top: 600px;
+        width: 1420px;
+    }
+
+    #Fhr {
+        position: relative;
+        color: black;
+        z-index: 5;
+        top: -140px;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" id="logo">
+    <h2 id="desc">Connect with friends and the world around you on Facebook.</h2>
+    <fieldset id="qwerty">
+        <p id="asdf">
+            <input type="text" placeholder="  Email or phone number" id="inp">
+        </p>
+        <p id="asdf">
+            <input type="password" placeholder="  Password" id="inp">
+        </p>
+        <button id="qwertyuiop">
+            <a href="login.html" id="login"> Log In</a>
+        </button>
+        <p>
+            <a href="forgotPassword.html" id="Fp">Forgot password?</a>
+        </p>
+        <hr id="hr">
+        <button id="button2">
+            <a href="create.html" id="CNA">Create new accaunt</a>
+        </button>
+    </fieldset>
+    <p id="CP">
+        <strong><a href="loginPage.html" id="CP1">Create a Page</a></strong> for celebrity, brand or business.
+    </p>
+</body>
+<footer id="fot">
+
+    <ul class="listOfLanguage">
+        <li class="lan">
+            <a>English (US)</a>
+        </li>
+        <li class="lan">
+            <a>Русский</a>
+        </li>
+        <li class="lan">
+            <a>Bahasa Indonesia</a>
+        </li>
+        <li class="lan">
+            <a>中文(简体)</a>
+        </li>
+        <li class="lan">
+            <a>Қазақша</a>
+        </li>
+        <li class="lan">
+            <a>Deutsch</a>
+        </li>
+        <li class="lan">
+            <a>한국어</a>
+        </li>
+        <li class="lan">
+            <a>Shqip</a>
+        </li>
+        <li class="lan">
+            <a>Español</a>
+        </li>
+        <li class="lan">
+            <a>Português (Brasil)</a>
+        </li>
+        <li class="lan">
+            <button>+</button>
+        </li>
+    </ul>
+    <hr id="Fhr">
+</footer>   
+
+</html>
