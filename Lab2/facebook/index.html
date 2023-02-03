@@ -130,25 +130,63 @@
         margin: 2px;
     }
 
+    .list {
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        font-size: 12px;
+        display: inline;
+        overflow: auto;
+        margin: 3px;
+    }
+
     .listOfLanguage {
+        position: relative;
         padding: 50px;
+        top: -110px;
         margin: 100px;
     }
 
     #fot {
-        background-color: white;
-        position: relative;
-        left: -10px;
-        top: 600px;
-        width: 1420px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: -8px;
+        top: 700px;
+        width: 1520px;
     }
 
     #Fhr {
         position: relative;
         color: black;
         z-index: 5;
-        top: -140px;
-        width: 100%;
+        top: -255px;
+        width: 70%;
+        left: -10px;
+        right: 82px;
+    }
+
+    #listOfItems {
+        position: relative;
+        padding: 54px;
+        margin: 94px;
+        top: -400px;
+    }
+
+    #Fs {
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        left: 140px;
+        /* top: 200px; */
+        width: 1050px;
+        height: 200px;
+        border-color: white;
+        border-width: 0px;
+    }
+    #meta{
+        position: relative;
+        left:148px;
+        top: -540px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
     }
 </style>
 
@@ -174,47 +212,134 @@
         </button>
     </fieldset>
     <p id="CP">
-        <strong><a href="loginPage.html" id="CP1">Create a Page</a></strong> for celebrity, brand or business.
+        <strong><a href="createPage.html" id="CP1">Create a Page</a></strong> for celebrity, brand or business.
     </p>
 </body>
 <footer id="fot">
-
-    <ul class="listOfLanguage">
-        <li class="lan">
-            <a>English (US)</a>
-        </li>
-        <li class="lan">
-            <a>Русский</a>
-        </li>
-        <li class="lan">
-            <a>Bahasa Indonesia</a>
-        </li>
-        <li class="lan">
-            <a>中文(简体)</a>
-        </li>
-        <li class="lan">
-            <a>Қазақша</a>
-        </li>
-        <li class="lan">
-            <a>Deutsch</a>
-        </li>
-        <li class="lan">
-            <a>한국어</a>
-        </li>
-        <li class="lan">
-            <a>Shqip</a>
-        </li>
-        <li class="lan">
-            <a>Español</a>
-        </li>
-        <li class="lan">
-            <a>Português (Brasil)</a>
-        </li>
-        <li class="lan">
-            <button>+</button>
-        </li>
-    </ul>
-    <hr id="Fhr">
-</footer>   
+    <fieldset id="Fs">
+        <ul class="listOfLanguage">
+            <li class="lan">
+                <a>English (US)</a>
+            </li>
+            <li class="lan">
+                <a>Русский</a>
+            </li>
+            <li class="lan">
+                <a>Bahasa Indonesia</a>
+            </li>
+            <li class="lan">
+                <a>中文(简体)</a>
+            </li>
+            <li class="lan">
+                <a>Қазақша</a>
+            </li>
+            <li class="lan">
+                <a>Deutsch</a>
+            </li>
+            <li class="lan">
+                <a>한국어</a>
+            </li>
+            <li class="lan">
+                <a>Shqip</a>
+            </li>
+            <li class="lan">
+                <a>Español</a>
+            </li>
+            <li class="lan">
+                <a>Português (Brasil)</a>
+            </li>
+            <li class="lan">
+                <button>+</button>
+            </li>
+        </ul>
+        <hr id="Fhr">
+        <ul id="listOfItems">
+            <li class="list">
+                <a>Sign Up</a>
+            </li>
+            <li class="list">
+                <a>Log In</a>
+            </li>
+            <li class="list">
+                <a>Messenger</a>
+            </li>
+            <li class="list">
+                <a>Facebook Lite</a>
+            </li>
+            <li class="list">
+                <a>Watch</a>
+            </li>
+            <li class="list">
+                <a>Games</a>
+            </li>
+            <li class="list">
+                <a>Marketplace</a>
+            </li>
+            <li class="list">
+                <a>Meta Pay</a>
+            </li>
+            <li class="list">
+                <a>Oculus</a>
+            </li>
+            <li class="list">
+                <a>Portal</a>
+            </li>
+            <li class="list">
+                <a>Instagram</a>
+            </li>
+            <li class="list">
+                <a>Bulletin</a>
+            </li>
+            <li class="list">
+                <a>Fundraisers</a>
+            </li>
+            <li class="list">
+                <a>Voting Information Center</a>
+            </li>
+            <li class="list">
+                <a>Privacy Policy</a>
+            </li>
+            <li class="list">
+                <a>Privacy Center</a>
+            </li>
+            <li class="list">
+                <a>Groups</a>
+            </li>
+            <li class="list">
+                <a>About</a>
+            </li>
+            <li class="list">
+                <a>Create Ad</a>
+            </li>
+            <li class="list">
+                <a>Create Page</a>
+            </li>
+            <li class="list">
+                <a>Developers</a>
+            </li>
+            <li class="list">
+                <a>Careers</a>
+            </li>
+            <li class="list">
+                <a>Cookies</a>
+            </li>
+            <li class="list">
+                <a>Ad choices</a>
+            </li>
+            <li class="list">
+                <a>Terms</a>
+            </li>
+            <li class="list">
+                <a>Help</a>
+            </li>
+            <li class="list">
+                <a>Contact Uploading & Non-UsersSettings</a>
+            </li>
+        </ul>
+        <p id = "meta">
+            Meta © 2023
+        </p>
+    </fieldset>
+</footer>
 
 </html>
