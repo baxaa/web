@@ -1,181 +1,291 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Instagram</title>
-    </head>
-    <style>
-        body{
-            background-color: rgb(250, 250, 250);
-        }
-        #instaPhoto{
-            position: absolute;
-            height: 630px;
-            width: 420px;
-            left: 350px;
-            top: 50px;
-        }
-        #login{
-            background-color: white;
-            position: absolute;
-            height: 400px;
-            width: 350px;
-            left: 800px;
-            top: 60px;
-            border-radius: 4px;
-            border-color: rgb(245, 245, 245);
-        }
-        #instaLogo{
-            position: relative;
-            left: 75px;
-            top: 20px;
-            height: 70px;
-            width: 200px;
-        }
-        .inp{
-            position: relative;
-            left: 44px;
-            top: 40px;
-            height: 36px;
-            width: 260px;
-            background-color: #fafafa;
-            font-size: 12px;
-            border-radius: 4px;
-            /* font: inherit; */
-            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-            border-color: #fafafa;
-            border-width: 0.5px;
-        }
-        #login3{
-            position: relative;
-            top: -2px;
-            text-decoration: none;
-            color: rgb(255, 250, 252);
-            font-size: 19px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            font-weight: bold;
-        }
-        #loginBut{
-            position: relative;
-            top: 60px;
-            height: 32px;
-            width: 263px;
-            left: 46px;
-            background-color: rgb(0, 149, 246);
-            border-color: rgb(0, 149, 246);
-            border-radius: 4px;
-        }
-        #hr1{
-            position: relative;
-            /* font-size: 30px; */
-            width: 100px;
-            left: -76px;
-            top: 75px;
-        }
-        #hr2{
-            position: relative;
-            width: 100px;
-            left: 82px;
-            top: 23px;
-            height: 0.1px;
-        }
-        #or{
-            position: relative;
-            left: 161px;
-            top: 50px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #8e8e8e;
-        }
-        #face{
-            text-decoration: none;
-            position: relative;
-            font-size: 16px;
-            color: #385185;
-            left: 90px;
-            top: 24px;
-            margin: 8px;
-        }
-        #face1{
-            position: relative;
-            height: 16px;
-            width: 16px;
-            left: 90px;
-            top: 25px;
-        }
-        #forgot{
-            text-decoration: none;
-            position: relative;
-            top: 20px;
-            left: 120px;
-            margin: 12px;
-            color: #00376B;
-        }
-        #noAcc{
-            background-color: white;
-            position: absolute;
-            left: 800px;
-            top: 490px;
-            height: 63px;
-            width: 350px;
-            border-radius: 4px;
-            border-color: rgb(245, 245, 245);
-        }
-        #noAcc1{
-            position: relative;
-            left: 14px;
-            font-size: 14px;
-            top: 12px;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 12px;
-        }
-        #noAcc2{
-            text-decoration: none;
-            color: #0095f6;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 2px;
-            font-weight: 600;
-        }
-        #downApp{
-            position: relative;
-            left: 900px;
-            top: 570px;
-            color: #262626;
-        }
-        #App{
-            position: relative;
-            left: 810px;
-            top: 560px;
-        }
-    </style>
-    <body>
-        <a><img src="https://i.ibb.co/L86xZnT/insta.png" alt="insta"  id="instaPhoto"></a>
-        <fieldset id="login">
-            <a href="https://imgbb.com/"><img src="https://i.ibb.co/brPXx6K/insta1.png" alt="insta1" id="instaLogo"></a>
-            <p class="login1">
-                <input type="text" placeholder="  Телефон, имя пользователя или эл.адрес" class="inp">
-            </p>
-            <p class="login1">
-                <input type="password" placeholder="  Пароль" class="inp">
-            </p>
-            <button id="loginBut">
-                <a href="" id="login3"> Войти</a>
-            </button>
-            <hr id="hr1">
-            <p id="or">ИЛИ</p>
-            <hr id="hr2">
-            <p> 
-                <img src="https://i.ibb.co/BC9Km34/2023-02-04-043222.png" alt="2023-02-04-043222" id="face1">
-                <a href="https://imgbb.com/" id="face"> Войти через Facebook</a>
-            </p>
-            <a href = "" id="forgot">Забыли пароль?</a>
-        </fieldset>
-        <fieldset id="noAcc">
-            <p id="noAcc1">
-                У Вас еще нет аккаунта?<a href="" id="noAcc2">  Зарегистрироваться</a>
-            </p>
-        </fieldset>
-        <p id="downApp">
-            Установите приложение.
+
+<head>
+    <title>Instagram</title>
+</head>
+<style>
+    body {
+        background-color: rgb(250, 250, 250);
+        width: 600px;
+    }
+
+    #instaPhoto {
+        position: absolute;
+        height: 540px;
+        width: 390px;
+        left: 350px;
+        top: 50px;
+    }
+
+    #login {
+        background-color: white;
+        position: absolute;
+        height: 380px;
+        width: 330px;
+        left: 800px;
+        top: 60px;
+        border-radius: 4px;
+        border-color: rgb(245, 245, 245);
+    }
+
+    #instaLogo {
+        position: relative;
+        left: 65px;
+        top: 20px;
+        height: 70px;
+        width: 200px;
+    }
+
+    .inp {
+        position: relative;
+        left: 30px;
+        top: 40px;
+        height: 36px;
+        width: 260px;
+        background-color: #fafafa;
+        font-size: 12px;
+        border-radius: 4px;
+        /* font: inherit; */
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+        border-color: #fafafa;
+        border-width: 0.5px;
+    }
+
+    #login3 {
+        position: relative;
+        top: -2px;
+        text-decoration: none;
+        color: rgb(255, 250, 252);
+        font-size: 19px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    #loginBut {
+        position: relative;
+        top: 60px;
+        height: 32px;
+        width: 263px;
+        left: 30px;
+        background-color: rgb(0, 149, 246);
+        border-color: rgb(0, 149, 246);
+        border-radius: 4px;
+    }
+
+    #hr1 {
+        position: relative;
+        /* font-size: 30px; */
+        width: 100px;
+        left: -84px;
+        top: 75px;
+    }
+
+    #hr2 {
+        position: relative;
+        width: 100px;
+        left: 76px;
+        top: 23px;
+        height: 0.1px;
+    }
+
+    #or {
+        position: relative;
+        left: 145px;
+        top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #8e8e8e;
+    }
+
+    #face {
+        text-decoration: none;
+        position: relative;
+        font-size: 16px;
+        color: #385185;
+        left: 70px;
+        top: 24px;
+        margin: 8px;
+    }
+
+    #face1 {
+        position: relative;
+        height: 16px;
+        width: 16px;
+        left: 75px;
+        top: 25px;
+    }
+
+    #forgot {
+        text-decoration: none;
+        position: relative;
+        top: 20px;
+        left: 100px;
+        margin: 12px;
+        color: #00376B;
+    }
+
+    #noAcc {
+        background-color: white;
+        position: absolute;
+        left: 800px;
+        top: 470px;
+        height: 63px;
+        width: 330px;
+        border-radius: 4px;
+        border-color: rgb(245, 245, 245);
+    }
+
+    #noAcc1 {
+        position: relative;
+        left: 14px;
+        font-size: 14px;
+        top: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #noAcc2 {
+        text-decoration: none;
+        color: #0095f6;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 2px;
+        font-weight: 600;
+    }
+
+    #downApp {
+        position: relative;
+        left: 890px;
+        top: 550px;
+        color: #262626;
+    }
+
+    #App {
+        position: relative;
+        left: 800px;
+        top: 540px;
+    }
+
+    .elements {
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        font-size: 12px;
+        display: inline;
+        overflow:auto;
+        margin: 3px;
+    }
+
+    .Ellist {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #8e8e8e;
+    }
+
+    #foot {
+        position: absolute;
+        background-color: rgb(250, 250, 250);
+        left: 150px;
+        top: 670px;
+        height: 100px;
+        width: 1150px;
+        border-color: rgb(250, 250, 250);
+        border-width: 0px;
+    }
+    #Meta{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #8e8e8e;
+        font-size: small;
+        position: relative;
+        left: 500px;
+        top: -30px;
+    }
+    .bolek{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #8e8e8e;
+        font-size: small;
+        position: relative;
+        left: 440px;
+        /* top: 20px; */
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <a><img src="https://i.ibb.co/L86xZnT/insta.png" alt="insta" id="instaPhoto"></a>
+    <fieldset id="login">
+        <a href="https://imgbb.com/"><img src="https://i.ibb.co/brPXx6K/insta1.png" alt="insta1" id="instaLogo"></a>
+        <p class="login1">
+            <input type="text" placeholder="  Телефон, имя пользователя или эл.адрес" class="inp">
         </p>
-        <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=ru&gl=US"><img src="https://i.ibb.co/bmhRg7p/goap.png" alt="goap" id="App"></a>
-    </body>
+        <p class="login1">
+            <input type="password" placeholder="  Пароль" class="inp">
+        </p>
+        <button id="loginBut">
+            <a href="" id="login3"> Войти</a>
+        </button>
+        <hr id="hr1">
+        <p id="or">ИЛИ</p>
+        <hr id="hr2">
+        <p>
+            <img src="https://i.ibb.co/BC9Km34/2023-02-04-043222.png" id="face1">
+            <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%252213cs20r1joyw8t15bw6ch1gwyjrb6pha8ft0nyyfo4k6t2143zds1%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Dru_RU%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D1479d10a-7c6c-416f-b2f5-71e2af7e6e64%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%252213cs20r1joyw8t15bw6ch1gwyjrb6pha8ft0nyyfo4k6t2143zds1%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=en_US&pl_dbl=0" id="face"> Войти через Facebook</a>
+        </p>
+        <a href="https://www.instagram.com/accounts/password/reset/" id="forgot">Забыли пароль?</a>
+    </fieldset>
+    <fieldset id="noAcc">
+        <p id="noAcc1">
+            У Вас еще нет аккаунта?<a href="https://www.instagram.com/accounts/emailsignup/" id="noAcc2"> Зарегистрироваться</a>
+        </p>
+    </fieldset>
+    <p id="downApp">
+        Установите приложение.
+    </p>
+    <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=ru&gl=US"><img
+            src="https://i.ibb.co/bmhRg7p/goap.png" alt="goap" id="App"></a>
+    <fieldset id="foot">
+        <ul>
+            <li class="elements">
+                <a href="" class="Ellist">Meta</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Информация</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Блог</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Вакансии</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Помощь</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">API</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Конфиденциальность</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Условия</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Популярные аккаунты</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Места</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Instagram Lite</a>
+            </li>
+            <li class="elements">
+                <a href="" class="Ellist">Загрузка контактов и лица, не являющиеся пользователями</a>
+            </li>
+        </ul>
+        <p>
+            <a href="" class="bolek">Русский</a>
+        </p>
+        <p id = "Meta">
+            © 2023 Instagram from Meta
+        </p>
+    </fieldset>
+</body>
+
 </html>
