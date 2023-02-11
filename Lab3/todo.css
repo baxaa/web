@@ -1,0 +1,129 @@
+.header {
+    background-color: black;
+    height: 50px;
+
+}
+
+.image {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 7.5px;
+}
+
+.trash {
+    background: transparent;
+    position: relative;
+    width: 30px;
+    height: 35px;
+    left: 700px;
+    bottom: 75px;
+    border-width: 0px;
+}
+
+.TDL {
+    color: rgb(174, 169, 169);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 10;
+    font-size: 20px;
+    position: relative;
+    left: 80px;
+    top: 13px;
+}
+
+.main_TDL {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 230px;
+    top: 100px;
+    font-size: 30px;
+}
+
+#NTbutton {
+    position: relative;
+    left: 200px;
+    top: 150px;
+    width: 600px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(159, 159, 159);
+    border-radius: 4px;
+    border-width: 0.1px;
+    border: 0.4 px solid;
+}
+
+.Add {
+    position: relative;
+    top: 150px;
+    width: 60px;
+    border-color: rgb(1, 60, 155);
+    border-radius: 4px;
+    border-width: 0.1px;
+    border: 0.4 px solid;
+    height: 43px;
+    background-image: linear-gradient(40deg, #006276, #014b8c, #276466, #0d9c00);
+    left: 230px;
+}
+
+.Add:hover {
+    background-image: linear-gradient(40deg, #000000, #068bff, #59a0e1, #0a7500);
+}
+
+::placeholder {
+    position: relative;
+    left: 10px;
+    font-size: 17px;
+    top: 2px;
+}
+
+#add {
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    /* background-color: #006276; */
+    height: auto;
+    width: auto;
+}
+
+.box{
+    position: relative;
+    top: 190px;
+    width: 800px;
+    left: 220px;
+    border-radius: 4px;
+    height: auto;
+    /* background-color: #000000; */
+}
+.list{
+    position: relative;
+    /* background-color: #cd7d7d; */
+    width: 720px;
+    text-decoration: none;
+    list-style: none;
+}
+.check{
+    position: relative;
+    right: 40px;
+    top: 4px;
+}
+
+.tasks{
+    position: relative;
+    width: 650px;
+    bottom: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+#hr{
+    position: relative;
+    width: 824px;
+    right: 52px;
+    bottom: 57px;
+}
+
+#lis1{
+    height: 60px;
+}
