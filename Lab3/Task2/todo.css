@@ -19,7 +19,6 @@
     left: 700px;
     bottom: 75px;
     border-width: 0px;
-    background-color: #000000;
 }
 
 .TDL {
@@ -116,6 +115,15 @@
     position: relative;
     right: 40px;
     top: 4px;
+    text-decoration: none;
+}
+
+.crossline{
+    position: relative;
+    width: 650px;
+    bottom: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-decoration: line-through;
 }
 
 .tasks{

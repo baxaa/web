@@ -7,7 +7,7 @@ function push() {
     Li = ""
     var arr = []
     Li += `<li id = "lis1">
-                <input type = "checkbox" class = "check">
+                <input type = "checkbox" class = "check" onclick = "cross(${a})">
                 <p class = "tasks" id = "${a}"> ${inputlist.value} </p>
                 <button class = "trash" onclick = "del(${a})" >
                     <img class = "image" src="http://atlas-content-cdn.pixelsquid.com/stock-images/trash-can-dustbin-ENAKKRB-600.jpg" >
@@ -22,14 +22,13 @@ function push() {
     inputlist.value = null
     taskbox.innerHTML += Li
     a++
-    // console.log(items)
 }
 
 function display() {
     Li = ""
     taskbox.innerHTML = ""
     for (const element of items) {
-        Li += `${element[0]}`
+        Li += element[0]
     }
     taskbox.innerHTML = Li
 }
@@ -41,4 +40,20 @@ function del(id) {
         }
     }
     display()
+}
+
+function cross(id){
+    for (var i = 0; i < items.length; i++) {
+        if(items[i][1] == id && items[i][2] == false){
+            document.querySelector(".tasks").className = "crossline"
+            items[i][2] = true
+            console.log(items[i])
+            break
+        }else if (items[i][1] == id && items[i][2] == true){
+            items[i][2] = false
+            document.querySelector(".crossline").className = "tasks"
+            console.log(items[i])
+            break
+        }
+    }
 }
