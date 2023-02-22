@@ -6,6 +6,7 @@ let Li = ""
 function push() {
     Li = ""
     var arr = []
+    let val = "unchecked"
     Li += `<li id = "lis1">
                 <input type = "checkbox" class = "check" onclick = "cross(${a})">
                 <p class = "tasks" id = "ass${a}"> ${inputlist.value} </p>
@@ -24,13 +25,15 @@ function push() {
     a++
 }
 
+
 function display() {
     Li = ""
     taskbox.innerHTML = ""
     for (const element of items) {
+        console.log(element[1])
         Li += element[0]
     }
-    taskbox.innerHTML = Li
+    taskbox.innerHTML += Li
 }
 function del(id) {
     for (var i = 0; i < items.length; i++) {
