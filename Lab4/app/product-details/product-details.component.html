@@ -3,7 +3,9 @@
 
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
+  <img src = {{product.image}}>
+  <!-- <img src="https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h8f/h61/63072540131358/apple-iphone-14-128gb-cernyj-106363023-1.jpg" class = "photo"> -->
+  <h4>{{ product.price }} kzt</h4>
   <p>{{ product.description }}</p>
   <button type="button" (click)="addToCart(product)">Buy</button>
 </div>

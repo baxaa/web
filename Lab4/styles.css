@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+.photo{
+  height: 300px;
+}
+
 .container {
   display: flex;
   flex-direction: row;

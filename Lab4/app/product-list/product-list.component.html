@@ -12,15 +12,14 @@
   <p *ngIf="product.description">
     Description: {{ product.description }}
   </p>
-
-  <button type="button" (click)="share()">
-    Share
-  </button>
-  
-  <app-product-alerts
-    [product]="product" 
-    (notify)="onNotify()">
-  </app-product-alerts>
+  <p>
+    Price : {{product.price}} kzt
+  </p>
+  <img src = {{product.image}} class = "photo">
+  <br>
+  <a target="_blank" href='https://t.me/share/url?url={{product.link}}&text={Share by telegram}'>
+    <button>Share on Telegram</button>
+  </a>
 
 </div>
 <!-- 
