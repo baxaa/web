@@ -46,7 +46,57 @@
             border-radius: 4px;
             background-color: aliceblue, white, snow, ivory;
         }
-    </style>
+        .strt{
+            position: relative;
+            left:700px;
+            height: 30px;
+            width: 60px;
+            border-width: 1px;
+            border-radius: 4px;
+            top: 40px;
+        }
+        .timeborder{
+            position: relative;
+            height: 15px;
+            width: 20px;
+            left: 800px;
+            top: 135px;
+            /* border-radius: 0px; */
+            border-width: 0px;
+            /* border-color: white; */
+            text-align: center;
+        }
+        #time{
+            position: relative;
+            top: -23px;
+            font-size: 20px;
+        }
+        .score {
+            position: relative;
+            top: 60px;
+            border-width: 0px;
+            text-align: center;
+        }
+        #allscore{
+            font-size: 20px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .missesword{
+            position: relative;
+            height: 20px;
+            width: 100px;
+            left: 870px;
+            top: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #miss{
+            position: relative;
+            font-size: 17px;
+            top: -17px;
+            color: red;
+        }
+    </style>   
 </head>
 <body>
     <header>
@@ -56,13 +106,31 @@
         </div>
     </header>
     <middle>
+        
         <fieldset class="words">
+            <p id = "msg">
 
+            </p>
+        </fieldset>
+        <fieldset class="timeborder">
+            <p id = "time">60</p>
         </fieldset>
         <fieldset class="type">
-            <input class="word">
-            <button class="refresh">refresh</button>
+            <input class="word" id = "inputword" type="text" onkeypress="Check(event)" placeholder="type type type ...">
+            <button class="refresh" id = "btn">refresh</button>
+        </fieldset>
+        <button class="strt" onclick="play()" >start</button>
+        <fieldset class="missesword">
+            <p id = "miss">
+
+            </p>
+        </fieldset>
+        <fieldset class = "score"> 
+            <p id = "allscore">
+
+            </p>
         </fieldset>
     </middle>
+    <script src="1.js"></script>
 </body>
 </html>
